@@ -1,0 +1,158 @@
+.signup-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url('https://wallpapercave.com/wp/wp4323724.jpg') no-repeat center center/cover;
+  position: relative;
+}
+
+/* Home Button Styling - Fixed z-index */
+.home-btn {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: #ff5722;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  z-index: 10;  /* 👈 Ensures button does not block form */
+}
+
+.home-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(255, 87, 34, 0.7);
+}
+
+.signup-card {
+  background: rgba(46, 46, 46, 0.9);
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  position: relative;
+  z-index: 1; /* 👈 Ensures form is above the home button */
+}
+
+
+.signup-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url('https://wallpapercave.com/wp/wp4323724.jpg') no-repeat center center/cover;
+  position: relative;
+}
+
+/* Home Button Styling - Correctly Positioned */
+.home-btn {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: #ff5722;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.home-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(255, 87, 34, 0.7);
+}
+
+.signup-card {
+  background: rgba(46, 46, 46, 0.9);
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  position: relative;
+}
+
+.signup-card h2 {
+  color: #fff;
+  font-size: 28px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 0 0 10px rgba(255, 87, 34, 0.7);
+}
+
+.input-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.input-group label {
+  display: block;
+  color: #ccc;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px;
+  background: #1f1f1f;
+  border: 1px solid #444;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.input-group input:focus {
+  border-color: #ff5722;
+  box-shadow: 0 0 5px rgba(255, 87, 34, 0.5);
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(90deg, #ff5722, #ff9800);
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.submit-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(255, 87, 34, 0.7);
+}
+
+.login-link {
+  margin-top: 20px;
+  color: #ccc;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.login-link span {
+  color: #ff5722;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.login-link span:hover {
+  text-decoration: underline;
+}
