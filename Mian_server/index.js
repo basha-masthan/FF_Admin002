@@ -18,7 +18,7 @@ mongoose.connect(process.env.MONGO_URI, { useNewUrlParser: true, useUnifiedTopol
 
 // Sample Route
 app.get('/', (req, res) => {
-  res.send('Server is running on Vercel! by basha');
+  res.send('Server is running on Vercel! by basha testing');
 });
 
 // 🚀 **Important: Export the Express App for Vercel**
