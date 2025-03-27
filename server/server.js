@@ -9,10 +9,14 @@ const { Server } = require('socket.io');
 const User = require('./models/User');
 const GameMode = require('./models/gameMode');
 
+// const cors = require('cors');
+// app.use(cors({ origin: 'https://ff-game-front-end.vercel.app' }));
+
+
 dotenv.config();
 const app = express();
 const server = http.createServer(app);
-const io = new Server(server, { cors: { origin: 'http://localhost:3000' } });
+const io = new Server(server, { cors: { origin: 'https://fbt-gaming-platform.vercel.app/' } });
 
 app.use(express.json());
 app.use(cors());
