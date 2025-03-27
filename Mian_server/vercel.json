@@ -10,7 +10,12 @@
       {
         "src": "/(.*)",
         "dest": "index.js"
-      }
+      },
+      "functions": {
+    "server/index.js": {
+      "maxDuration": 60
+    }
+  }
     ]
   }
   
